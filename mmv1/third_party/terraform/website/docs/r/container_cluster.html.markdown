@@ -459,7 +459,7 @@ Fleet configuration for the cluster. Structure is [documented below](#nested_fle
     The status of the Stateful HA addon, which provides automatic configurable failover for stateful applications.
     It is disabled by default for Standard clusters. Set `enabled = true` to enable.
 
-* `parallelstore_csi_driver_config` - (Optional, [Beta](https://terraform.io/docs/providers/google/guides/provider_versions.html)) The status of the Parallelstore CSI driver addon,
+* `parallelstore_csi_driver_config` - (Optional) The status of the Parallelstore CSI driver addon,
     which allows the usage of a Parallelstore instances as volumes.
     It is disabled by default for Standard clusters; set `enabled = true` to enable.
 

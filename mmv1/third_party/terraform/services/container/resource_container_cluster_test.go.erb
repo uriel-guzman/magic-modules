@@ -5239,6 +5239,9 @@ resource "google_container_cluster" "primary" {
     stateful_ha_config {
       enabled = false
     }
+    parallelstore_csi_driver_config {
+      enabled = false
+    }
 <% unless version == 'ga' -%>
     istio_config {
       disabled = true
@@ -5310,6 +5313,9 @@ resource "google_container_cluster" "primary" {
       enabled = true
     }
     stateful_ha_config {
+      enabled = true
+    }
+    parallelstore_csi_driver_config {
       enabled = true
     }
 <% unless version == 'ga' -%>
